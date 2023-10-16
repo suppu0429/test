@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>abc</title>
+    <script src="test3.js"></script>
+</head>
+
+<body>
+    <h1>suppu</h1>
+    <div>
+        <label>first name</label>
+        <input type="text"  name="firstName" onchange="handleChange(event)" />
+    </div>
+    <div>
+        <label>last name</label>
+        <input type="last name"  name="lastName" onchange="handleChange(event)" />
+    </div>
+    <div>
+        <label>gender</label>
+        <select name="gender" onchange="handleChange(event)">
+            <option value="" >please select gender</option>
+            <option value="male">male</option>
+            <option value="female">female</option>
+        </select>
+    </div>
+    <div>
+        <label>phone number</label>
+        <input type="number" name="phoneNumber" onchange="handleChange(event)" />
+    </div>
+    <div><!-- div block element -->
+        <span><!-- span inline element -->
+            <label>primary email</label>
+            <input type="email" name="email" onchange="handleChange(event)" />
+        </span>
+    </div>
+    <div>
+        <label>date of birth</label>
+        <input type="date" id="birthday" name="dob" onchange="handleChange(event)" />
+    </div>
+    <button onclick="active()">submit</button>
+</body>
+</html>
