@@ -11,6 +11,14 @@ let registrationForm={}
 function handleChange(e){
 //   console.log(e.target.value)
   registrationForm[e.target.name] = e.target.value
-  console.log(registrationForm)
+  console.log("registrationForm", registrationForm)
 }
+
+ let usersList = []
+ function handleSubmit(e){
+ usersList.push(registrationForm)
+ registrationForm={}
+ console.log("usersList", usersList)
+ }
+  
 
